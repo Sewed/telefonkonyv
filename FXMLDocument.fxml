@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="phonebook.FXMLDocumentController">
+    <children>
+        <Label layoutX="229.0" layoutY="14.0" minHeight="16" minWidth="69" text="Telefonkönyv">
+         <font>
+            <Font name="Gentium Basic Bold Italic" size="22.0" />
+         </font></Label>
+      <SplitPane dividerPositions="0.23411371237458195" layoutY="47.0" prefHeight="603.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <StackPane id="menuPane" fx:id="menuPane" layoutX="-31.0" layoutY="69.0" prefHeight="601.0" prefWidth="137.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane id="contactPane" fx:id="contactPane" layoutX="45.0" layoutY="101.0" prefHeight="601.0" prefWidth="455.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Pane id="exportPane" fx:id="exportPane" layoutX="55.0" layoutY="111.0" prefHeight="601.0" prefWidth="455.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView id="tabel" fx:id="tabel" layoutX="-2.0" layoutY="-5.0" prefHeight="434.0" prefWidth="448.0">
+                         <placeholder>
+                              <Label text="Nincs adat." />
+                              </placeholder>
+                            <columns>
+                          </columns>
+                        </TableView>
+                        <TextField id="inputLastName" fx:id="inputLastName" layoutX="110.0" layoutY="446.0" prefHeight="25.0" prefWidth="168.0" promptText="Kovács" />
+                        <TextField id="inputEmail" fx:id="inputEmail" layoutX="110.0" layoutY="510.0" prefHeight="25.0" prefWidth="168.0" promptText="kovacsgyula@example.com" />
+                        <TextField id="inputFirstName" fx:id="inputFirstName" layoutX="110.0" layoutY="478.0" prefHeight="25.0" prefWidth="168.0" promptText="Gyula" />
+                        <Label alignment="CENTER_RIGHT" layoutX="30.0" layoutY="450.0" prefHeight="17.0" prefWidth="72.0" text="Vezetéknév:" />
+                        <Label alignment="CENTER_RIGHT" layoutX="30.0" layoutY="514.0" prefHeight="17.0" prefWidth="72.0" text="Email:" />
+                        <Label alignment="CENTER_RIGHT" layoutX="30.0" layoutY="481.0" prefHeight="17.0" prefWidth="72.0" text="Keresztnév:" />
+                        <Button id="addNewContractButton" fx:id="addNewContractButton" layoutX="299.0" layoutY="478.0" mnemonicParsing="false" text="Uj kontakt létrehozása" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>
